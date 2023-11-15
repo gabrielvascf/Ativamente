@@ -16,15 +16,13 @@ struct Paciente {
 
 
 public:
-    Paciente(string nome, string nasc, string cidade, string estado, string cfisicas, string cmentais) {
-        nome = nome;
+    Paciente(string name, string nasc, string cidade, string estado, string cfisicas, string cmentais) {
+        nome = name;
         data_nascimento = nasc;
         cidade = cidade;
         estado = estado;
         cfisicas = cfisicas;
         cmentais = cmentais;
-
-
     }
 
     void setnome (){
@@ -34,14 +32,15 @@ public:
      string getnome(){
        return nome;
      }
+    string nome;
+    string data_nascimento;
+    string cidade;
+    string estado;
+    string cfisicas;
+    string cmentais;
 
 private:
-        string nome;
-        string data_nascimento;
-        string cidade;
-        string estado;
-        string cfisicas;
-        string cmentais;
+
       //  Atividade historico[30];
 
 };
@@ -49,6 +48,7 @@ private:
 
 int main() {
     Paciente p = Paciente("luis", "hoje", "aqui", "aqui tambem", "ok", "maluco");
-    cout << p.nome;
+    cout << p.nome << endl;
 
+    return 0;
 }
