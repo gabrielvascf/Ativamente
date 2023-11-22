@@ -90,7 +90,7 @@ private:
 
 int main() {
     vector<Pessoa> pessoas;
-setlocale(LC_ALL,"");
+    setlocale(LC_ALL,"");
 
     while (true) {
         cout << "MENU:" << endl;
@@ -98,12 +98,11 @@ setlocale(LC_ALL,"");
         cout << "2. Mostrar todas as pessoas cadastradas" << endl;
         cout << "3. Sair" << endl;
         cout << "Escolha uma opcao: ";
-
-        int opcao;
+        char opcao;
         cin >> opcao;
         cout << endl;
 
-        if (opcao == 1) {
+        if (opcao == '1') {
             Pessoa p;
             p.setNome();
             p.setDataNascimento();
@@ -117,7 +116,7 @@ setlocale(LC_ALL,"");
             cout << "Pessoa cadastrada com sucesso!" << endl;
             cout << endl;
         }
-        else if (opcao == 2) {
+        else if (opcao == '2') {
             if (pessoas.empty()) {
                 cout << "Nenhuma pessoa cadastrada." << endl;
                 cout << endl;
@@ -135,7 +134,7 @@ setlocale(LC_ALL,"");
                 }
             }
         }
-        else if (opcao == 3) {
+        else if (opcao == '3') {
             break;
         }
         else {
