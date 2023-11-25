@@ -93,7 +93,7 @@ private:
 
 int main() {
     vector<Pessoa> pessoas;
-    int opcao;
+    char opcao;
 
 setlocale(LC_ALL,"");
  system("color F0");
@@ -110,7 +110,7 @@ setlocale(LC_ALL,"");
 
         system("cls");
 
-        if (opcao == 1) {
+        if (opcao == '1') {
             Pessoa p;
             p.setNome();
             p.setDataNascimento();
@@ -126,7 +126,7 @@ setlocale(LC_ALL,"");
             cout << "--------------------------------" << endl;
 
         }
-        else if (opcao == 2) {
+        else if (opcao == '2') {
             if (pessoas.empty()) {
                 cout << "NÃO HÁ PESSOAS CADASTRADAS!" << endl;
             }
@@ -145,7 +145,7 @@ setlocale(LC_ALL,"");
                 }
             }
         }
-        else if (opcao == 3) {
+        else if (opcao == '3') {
             break;
         }
         else {
